@@ -1063,4 +1063,4 @@ rect.legend-mouseover-inactive,
     color: white;
     margin: 0 auto;
     margin-top: 120px;
-`,b1=()=>ge.jsx(y1,{children:"Page is not found."}),w1=()=>ge.jsx(wg,{children:ge.jsxs(n0,{basename:"/crypto-market-frontend",children:[ge.jsx(db,{}),ge.jsxs(Zy,{children:[ge.jsx(Ua,{path:"/dashboard",element:ge.jsx(n1,{})}),ge.jsx(Ua,{path:"/currency/:id",element:ge.jsx(v1,{})}),ge.jsx(Ua,{path:"*",element:ge.jsx(b1,{})})]})]})});Zo.createRoot(document.getElementById("root")).render(ge.jsx(w1,{}));
+`,b1=()=>ge.jsx(y1,{children:"Page is not found."}),w1=()=>ge.jsx(wg,{children:ge.jsxs(n0,{basename:"/crypto-market-frontend",children:[ge.jsx(db,{}),ge.jsxs(Zy,{children:[ge.jsx(Ua,{path:"/",element:ge.jsx(n1,{})}),ge.jsx(Ua,{path:"/currency/:id",element:ge.jsx(v1,{})}),ge.jsx(Ua,{path:"*",element:ge.jsx(b1,{})})]})]})});Zo.createRoot(document.getElementById("root")).render(ge.jsx(w1,{}));
