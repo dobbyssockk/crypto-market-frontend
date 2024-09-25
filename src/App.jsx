@@ -9,7 +9,7 @@ import NotFound from "./pages/NotFound.jsx";
 const App = () => {
     return (
         <CryptoFavoritesProvider>
-            <Router>
+            <Router basename="/crypto-market-frontend">
                 <Header />
                 <Routes>
                     <Route path="/" element={<Dashboard />} />
