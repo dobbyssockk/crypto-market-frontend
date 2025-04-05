@@ -1,6 +1,10 @@
 # Crypto Market
 
+## This project is live at https://dobbyssockk.github.io/crypto-market-frontend
+
 This project is a cryptocurrency dashboard that provides real-time price updates for popular cryptocurrencies. The dashboard includes charts, favorite lists, and a search function to help users monitor cryptocurrency market changes. The frontend is built using React and integrates with the **Crypto Market Backend** to fetch candlestick chart data and real-time asset details.
+
+Check out the [backend part of this project](https://github.com/dobbyssockk/crypto-market-backend)
 
 ## Dashboard
 
