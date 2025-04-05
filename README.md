@@ -1,4 +1,4 @@
-# Crypto Market
+# Crypto Market [Frontend]
 
 ## This project is live at https://dobbyssockk.github.io/crypto-market-frontend
 
