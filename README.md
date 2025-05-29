@@ -51,3 +51,16 @@ Make sure to clone and start the server locally before using the frontend.
 - **Separation of concerns**: backend handles real-time data, frontend handles presentation
 - **Clean UI design**: with reusable layout and interaction patterns
 - **Error handling**: fallback for 404 pages and unavailable coins
+
+---
+
+## 🧪 Local Installation
+
+To run the app with full functionality:
+
+```bash
+git clone https://github.com/dobbyssockk/crypto-market-fe.git
+cd crypto-market-fe
+npm install
+npm run dev
+```
