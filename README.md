@@ -1,43 +1,53 @@
-# Crypto Market [Frontend]
+# 💹 Crypto Market [Frontend]
 
-This project is a cryptocurrency dashboard that provides real-time price updates for popular cryptocurrencies. The dashboard includes charts, favorite lists, and a search function to help users monitor cryptocurrency market changes. The frontend is built using React and integrates with the **Crypto Market Backend** to fetch candlestick chart data and real-time asset details.
+A responsive cryptocurrency dashboard that displays real-time price data and candlestick charts for major cryptocurrencies. Built with React and `styled-components`, it integrates with a custom backend to provide live price tracking and market analysis.
 
-## Backend
+![Preview](./screenshots/preview.png)
+![Preview](./screenshots/preview2.png)
 
-Check out the [backend part of this project](https://github.com/dobbyssockk/crypto-market-backend)
+---
 
-## Dashboard
+## ⚠️ Important Note
 
-![Dashboard](screenshots/dashboard.png)
+This project requires a running backend server for full functionality.  
+Make sure to clone and start the server locally before using the frontend.
 
-The main dashboard provides an overview of your favorite cryptocurrencies and the market in general.
+> 🔗 Backend repository: [crypto-market-be](https://github.com/dobbyssockk/crypto-market-be)
 
-## Currency Detail
+---
 
-![Currency Detail](screenshots/currencyDetail.png)
+## 🧭 Project Overview
 
-The detailed view shows candlestick charts and real-time price changes for individual cryptocurrencies.
+**Crypto Market** is a web application for monitoring cryptocurrency prices, viewing candlestick charts, and managing a personalized list of favorites. It uses routing, shared global state, and API integration with a separate backend service.
 
-## Features
+---
 
-- **Cryptocurrency Price Tracking**: Real-time updates for major cryptocurrencies like Bitcoin, Ethereum, and more.
-- **Candlestick Chart**: Visualize price movements for different time periods.
-- **Favorites Management**: Mark and view favorite cryptocurrencies for quick access, stored locally.
-- **Search Functionality**: Quickly search for any cryptocurrency by symbol or name.
+## 🚀 Features
 
-## Tech Stack
+- **Real-time price tracking** for top cryptocurrencies
+- **Candlestick charts** for market analysis
+- **Favorite list** (with persistence via context)
+- **Search functionality** to quickly find coins
+- **Responsive layout** for mobile and desktop
+- **404 page** for invalid routes
+- **Client-side routing** with React Router
 
-### Crypto Market Frontend
+---
 
-React.js with Vite for fast builds and efficient development.
-The frontend communicates with the CoinCap API to fetch cryptocurrency data such as prices, symbols, and names. It also fetches candle data from the **Crypto Market Backend**.
+## 🛠️ Technologies Used
 
-- **Assets List**: The frontend makes a request to the CoinCap API to fetch a list of cryptocurrencies. Each asset is displayed with its name, symbol, price, and logo.
-- **Asset Details**: When viewing a specific cryptocurrency, the frontend fetches additional details such as the 24-hour price change and candlestick chart data, which are obtained from the backend.
-- **LocalStorage Integration**: The favorite cryptocurrencies selected by the user are stored in the browser's `localStorage`, allowing users to save their favorite assets and keep them after refreshing or returning to the page.
+- **React** – component-based UI
+- **React Router** – SPA navigation
+- **React Context API** – for global state (favorites)
+- **styled-components** – CSS-in-JS styling
+- **Vite** – fast development environment
 
-### Crypto Market Backend
+---
 
-The backend is built using Node.js and Express, and it uses the **ccxt** library to retrieve candlestick data from the Binance exchange. The backend API fetches OHLCV (Open, High, Low, Close, Volume) data for a specific cryptocurrency and returns it to the frontend.
+## 💡 Key Concepts
 
-- **Candlestick Data**: The backend fetches the historical price data for cryptocurrencies over a configurable time range (default is 30 days). This data is then formatted and returned as JSON to the frontend for rendering in a candlestick chart.
+- **Modular React architecture**: components, pages, and contexts
+- **Dynamic routing**: `/currency/:id` to show coin-specific data
+- **Separation of concerns**: backend handles real-time data, frontend handles presentation
+- **Clean UI design**: with reusable layout and interaction patterns
+- **Error handling**: fallback for 404 pages and unavailable coins
